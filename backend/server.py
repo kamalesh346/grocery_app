@@ -11,7 +11,7 @@ def get_products():
     response.headers.add('Access-Control-Allow-Origin','*')
     return response
 
-@app.route('/hello')
+@app.route('/')
 def hello():
     print("hello! how r u")  # Logs to the server console
     return "Hello! How are you?"  # Returns a response to the client
